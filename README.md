@@ -1,4 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DOGAAS (Dogs as a Service)
+
+A simple API service that provides random dog images, similar to CATAAS (Cats as a Service).
+
+## Features
+
+- Random dog image endpoint (`/api/dog`)
+- Cloudinary integration for image hosting
+- Simple and fast API responses
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env.local` file with your Cloudinary credentials:
+   ```
+   CLOUDINARY_CLOUD_NAME=your_cloud_name
+   CLOUDINARY_API_KEY=your_api_key
+   CLOUDINARY_API_SECRET=your_api_secret
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+## API Endpoints
+
+### Get Random Dog Image
+
+```
+GET /api/dog
+```
+
+Returns a random dog image URL.
+
+## Development
+
+This project is built with:
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Cloudinary
 
 ## Getting Started
 
