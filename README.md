@@ -2,29 +2,15 @@
 
 A simple API service that provides random dog images, similar to CATAAS (Cats as a Service).
 
-## Features
+## Current Features
 
 - Random dog image endpoint (`/api/dog`)
-- Cloudinary integration for image hosting
-- Simple and fast API responses
-
-## Setup
-
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create a `.env.local` file with your Cloudinary credentials:
-   ```
-   CLOUDINARY_CLOUD_NAME=your_cloud_name
-   CLOUDINARY_API_KEY=your_api_key
-   CLOUDINARY_API_SECRET=your_api_secret
-   ```
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
+- Full-screen image display at `/dog` route
+- Automatic redirection from root to `/dog`
+- High-quality images from Unsplash
+- Fast response times with Turbopack
+- TypeScript support
+- Modern UI with Tailwind CSS
 
 ## API Endpoints
 
@@ -34,16 +20,57 @@ A simple API service that provides random dog images, similar to CATAAS (Cats as
 GET /api/dog
 ```
 
-Returns a random dog image URL.
+Returns a JSON response with a random dog image URL:
+
+```json
+{
+  "url": "/images/dogX.jpg"
+}
+```
+
+## Future Features
+
+- [ ] Image filters (blur, grayscale, etc.)
+- [ ] GIF support
+- [ ] Image size options (small, medium, large)
+- [ ] Text overlay on images (like CATAAS)
+- [ ] Image tags/categories
+- [ ] Cloudinary integration for better image hosting
+- [ ] Rate limiting
+- [ ] Caching layer
+- [ ] API documentation with Swagger/OpenAPI
+- [ ] Docker support
+- [ ] CI/CD pipeline
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env.local` file with your Unsplash API credentials:
+   ```
+   UNSPLASH_ACCESS_KEY=your_access_key
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
 ## Development
 
 This project is built with:
 
-- Next.js 14
+- Next.js 15.2.4
 - TypeScript
 - Tailwind CSS
-- Cloudinary
+- Unsplash API
+- Turbopack
+
+## License
+
+MIT License - feel free to use this project as you wish.
 
 ## Getting Started
 
