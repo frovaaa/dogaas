@@ -2,6 +2,8 @@
 
 A simple API service that provides random dog images, similar to CATAAS (Cats as a Service).
 
+> 🎮 This is a toy project created entirely with [Cursor](https://cursor.sh), an AI-powered code editor. It serves as a fun experiment in building a simple API service with modern web technologies.
+
 ## Current Features
 
 - Random dog image endpoint (`/api/dog`)
